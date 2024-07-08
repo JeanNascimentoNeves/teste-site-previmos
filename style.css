@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  width: auto;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+.header {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-color: #453d91;
+  display: flex;
+  justify-content: center;
+  max-height: 100%;
+  height: 28rem;
+  clip-path: polygon(0 0, 550% 0, 50% 100%, 0 91%);
+}
+
+.foto-principal {
+  margin: 1em 1em 0 1em;
+  background-image: url(imagens/foto-reader.svg);
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  display: flex;
+  z-index: 1;
+}
+.foto-logo-pai {
+  border: 1px solid #453d91;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 230px;
+  top: 55%;
+  position: absolute;
+}
+.foto-logotipo {
+  width: 90%;
+}
+.foto-logo-avo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+main {
+  margin-top: 14em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+.nosso-filho {
+  text-decoration: none;
+  border: 1px solid #453d91;
+  height: 3.8125em;
+  border-radius: 2.8125em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #453d91;
+  color: white;
+  font-weight: 700;
+}
+.nosso.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.wat,
+.site,
+.orca,
+.port {
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 3rem;
+  background-size: 2.5rem;
+}
+.site {
+  background-image: url(imagens/mundo-pq.svg);
+}
+.wat {
+  background-image: url(imagens/wats-pq.svg);
+}
+.orca {
+  background-image: url(imagens/mochila-pq.svg);
+}
+.port {
+  background-image: url(imagens/livro-pq.svg);
+}
+
+.nosso {
+  width: 100%;
+  padding-inline: 5%;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.wat:hover,
+.site:hover,
+.orca:hover,
+.port:hover {
+  background-position: top left;
+
+  background-color: #323366;
+  background-size: calc(2.5rem + 2rem);
+  transition: 12ms;
+}
+
+.imgem-redes {
+  text-decoration: none;
+  margin-top: 2em;
+  display: flex;
+  gap: 4em;
+  align-items: center;
+}
+.imagem-redes-1 {
+  max-width: 100%;
+}
+footer {
+  padding-block: 2.5em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+hr {
+  margin-inline: 5%;
+}
+.footer-filho {
+  color: #453d91;
+}
